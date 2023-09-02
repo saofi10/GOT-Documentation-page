@@ -1,0 +1,32 @@
+/* Navbar Styles */
+/*must fix it all /*
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    overflow-y: scroll;
+    height: 100%;
+    display: none; /* Hide on small screens */
+}
+
+#navbar h2 {
+    margin-top: 0;
+}
+
+.nav-link {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Show the navbar on large screens */
+@media (min-width: 768px) {
+    #navbar {
+        display: block;
+    }
+}
