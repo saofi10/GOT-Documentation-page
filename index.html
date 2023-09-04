@@ -1,29 +1,26 @@
 <!doctype html>
 <html lang='en'>
-<main id='main-doc'>
 <head>
 <link rel='stylesheet' href='styles.css'>
 <title>Game of Thrones Documentation</title>
-<meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+
 </head>
 <body>
   <nav id="navbar">
-        <header>
-            <h2>Table of Contents</h2>
-        </header>
-        <a class="nav-link" href="#Season_Summaries">Resúmenes de Temporadas</a>
-        <a class="nav-link" href="#Character_Biographies">Biografías de Personajes</a>
-        <a class="nav-link" href="#Westeros_and_Essos_Maps">Mapas de Westeros y Essos</a>
-        <a class="nav-link" href="#Noble_Houses_and_Lineages">Casas Nobles y Linajes</a>
-        <a class="nav-link" href="#Weapons_and_Artifacts">Armas y Artefactos</a>
-        <a class="nav-link" href="#Creatures_and_Mythical_Beings">Criaturas y Seres Míticos</a>
-        <a class="nav-link" href="#Highlighted_Episodes">Episodios Destacados</a>
-        <a class="nav-link" href="#Additional_Resource">Recursos Adicionales</a>
+            <header>Table of Contents</header>
+    <ul>
+        <li><a class="nav-link" href="#Season_Summaries">Season Summaries</a></li>
+        <li><a class="nav-link" href="#Character_Biographies">Character Biographies</a></li>
+        <li><a class="nav-link" href="#Westeros_and_Essos_Maps">Westeros and Essos Maps</a></li>
+        <li><a class="nav-link" href="#Noble_Houses_and_Lineages">Noble Houses and Lineages</a></li>
+        <li><a class="nav-link" href="#Weapons_and_Artifacts">Weapons and Artifacts</a></li>
+        <li><a class="nav-link" href="#Creatures_and_Mythical_Beings">Creatures and Mythical Beings</a></li>
+        <li><a class="nav-link" href="#Highlighted_Episodes">Highlighted Episodes</a></li>
+        <li><a class="nav-link" href="#Additional_Resources">Additional Resources</a></li>
+    </ul>
     </nav>
-  <header>
+  <main id='main-doc'>
         <h1>Game of Thrones Documentation</h1>
-    </header>
  <section class="main-section" id='Season_Summaries'>
         <header>
             <h2>Season Summaries</h2>
@@ -256,7 +253,9 @@
         <header>
             <h2>Westeros and Essos Maps</h2>
         </header>
+        <fig class='image'>
        <img src='https://media.gq-magazine.co.uk/photos/5d13ab521a3f0f8d8a95fee2/16:9/w_1600,c_limit/map-known-world-gq-10apr19_elliot_bryne_b.jpg' alt='Westeros and Essos map'>
+    </fig>
     </section>
 
     <section class="main-section" id='Noble_Houses_and_Lineages'>
@@ -517,53 +516,58 @@
         <header>
             <h2>Additional Resources</h2>
         </header>
-       
-                      <h3 class="resourceTitle">Game of Thrones Script Samples</h3>
-                      <p class="resourceDescription">
-                          Explore the intricacies of scriptwriting in "Game of Thrones" with our collection of script samples. Dive into the dialogue and stage directions that brought the series to life. You can view the scripts in their original formatting using the <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> elements, providing an authentic behind-the-scenes experience.
-                      </p>
-
-                    
                       <h3 class="resourceTitle">Interactive Maps</h3>
-                      <p class="resourceDescription">
+                       <p class="resourceDescription">
                           Explore the vast world of Westeros and Essos with this cool <a href='https://quartermaester.info/'>interactive maps.</a>
                       </p>
-                      </section>
+        
                   <h3 class='easterEgg'>Easter Egg</h3>
                   <p class='resourceDescription'>
-                    This is how it looks like the most memorable phrase of the serie in Assembler language.</P>
-                    <code>section .data
-                      message db 'The Winter is Coming',0
+                    This is how it looks like the most memorable phrase of the serie in Assembler language.</p>
+                      <br>
+<code>
+        section .data
+            message db 'The Winter is Coming',0
 
-                  section .text
-                      global _start
+        section .text
+            global _start
 
-                  _start:
-                      ; Write the message to the standard output (STDOUT)
-                      mov eax, 4         ; Syscall number for write (4)
-                      mov ebx, 1         ; File descriptor for STDOUT (1)
-                      mov ecx, message   ; Address of the message
-                      mov edx, 19        ; Length of the message
-                      int 0x80           ; System call for write
+        _start:
+            ; Write the message to the standard output (STDOUT)
+            mov eax, 4         ; Syscall number for write (4)
+            mov ebx, 1         ; File descriptor for STDOUT (1)
+            mov ecx, message   ; Address of the message
+            mov edx, 19        ; Length of the message
+            int 0x80           ; System call for write
 
-                      ; Terminate the program
-                      mov eax, 1         ; Syscall number for exit (1)
-                      xor ebx, ebx       ; Return code (0)
-                      int 0x80           ; System call for exit
-                  </code>
-                  <p>And this is how it looks in c#:</p>
-                  <code>Console.WriteLine("The Winter Is Coming");</code>
-                  <p>And this is how it looks in python:</p>
-                  <code>print("The Winter is Coming")</code>
-                  <p>And this is how it looks in Rust:
-                    <code>fn main() {
-                      println!("The Winter is Coming");
-                  }
-                  </code>
-                  <br>
-                  <code>
-                  /t/t/t/t/t/t/t/tThanks for Reading!"</code>
-                  </p>
-</body>
+            ; Terminate the program
+            mov eax, 1         ; Syscall number for exit (1)
+            xor ebx, ebx       ; Return code (0)
+            int 0x80           ; System call for exit
+    </code>
+<br>
+<br>
+    <code>
+        Console.WriteLine("The Winter Is Coming");
+    </code>
+<br>
+<br>
+    <code>
+        print("The Winter is Coming")
+    </code>
+<br>
+<br>
+    <code>
+        fn main() {
+            println!("The Winter is Coming");
+        }
+    </code>
+<br>
+<br>
+    <code>
+        // thanks for reading!
+    </code>
+</section>
 </main>
+</body>
 </html> 
